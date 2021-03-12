@@ -1,5 +1,7 @@
-# businiaoo 2021/1/30 1182693164@qq.com
-import gt_stat
+# businiaoo 2021/1/30 businiao006@gmail.com
+# https://github.com/businiaoo/visualizeme
+
+from label_statistics.gt_statistics import LabelInfo
 
 
 if __name__ == "__main__":
@@ -7,6 +9,8 @@ if __name__ == "__main__":
     label_format = 1
     img_path = "../data/images"
 
-    label = gt_stat.LabelInfo(label_path, label_format, img_path)
+    label = LabelInfo(label_path, label_format, img_path)
+    a = label.statistic()
+
 
 
